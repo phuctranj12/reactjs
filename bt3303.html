@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Page</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	var Student = function() {
+		this.fullname
+		this.age
+		this.address
+		this.email
+		this.phoneNumber
+
+		this.input = function() {
+			this.fullname = prompt('Nhap ten: ')
+			this.age = prompt('Nhap tuoi: ')
+			this.address = prompt('Nhap dia chi: ')
+			this.email = prompt('Nhap email: ')
+			this.phoneNumber = prompt('Nhap SDT: ')
+		}
+
+		this.display = function() {
+			console.log(`Ten: ${this.fullname}, tuoi: ${this.age}, dia chi: ${this.address}, email: ${this.email}, SDT: ${this.phoneNumber}`)
+		}
+	}
+
+	var stdA = new Student()
+	var stdB = new Student()
+
+	stdA.input()
+	stdA.display()
+
+	stdB.input()
+	stdB.display()
+</script>
+</body>
+</html>
